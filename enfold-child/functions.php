@@ -131,7 +131,12 @@ function add_custom_css() {
 			body.page-id-387 .container_wrap  .hr.avia-builder-el-first {
 				margin-top: 0px !important;
 			}
-			.page-id-367 .mfp-iframe-scaler {
+			body.page-id-472 .container_wrap  .hr.avia-builder-el-first {
+				margin-top: 0px !important;
+			}
+			.page-id-367 .mfp-iframe-scaler,
+			.page-id-10 .mfp-iframe-scaler,
+			.page-id-432 .mfp-iframe-scaler {
 			    padding-top: 100%;
 			}
 /*			.mfp-iframe-holder .mfp-content {
@@ -142,12 +147,18 @@ function add_custom_css() {
 			    max-height: 500px;
 			}*/
 			.mfp-iframe-scaler iframe {
-				height: 466px;
+				/*height: 466px;*/
+				height: 535px;
 			}
 		}
 		@media only screen and (max-width: 611px) {
 			.mfp-iframe-scaler iframe {
-				height: 758px;
+				height: 800px;
+			}
+			.page-id-367 .mfp-iframe-scaler,
+			.page-id-10 .mfp-iframe-scaler,
+			.page-id-432 .mfp-iframe-scaler {
+			    padding-top: 100%;
 			}
 /*						.page-id-367 .mfp-iframe-scaler {
 			    padding-top: 59%;
