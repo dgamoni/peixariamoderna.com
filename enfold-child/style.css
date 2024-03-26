@@ -1,0 +1,149 @@
+/*
+Theme Name: Enfold Child
+Description: A <a href='http://codex.wordpress.org/Child_Themes'>Child Theme</a> for the Enfold Wordpress Theme. If you plan to do a lot of file modifications we recommend to use this Theme instead of the original Theme. Updating wil be much easier then.
+Version: 1.0
+Author: Kriesi
+Author URI: http://www.kriesi.at
+Template: enfold
+*/
+
+/* Alterar letras no menu principal */
+.avia-menu-text {
+	font-weight: normal!important;
+}
+
+.main_color .required { color:#000000!important; text-decoration: none!important; }
+
+/* Altera cor de fundo do shrink menu */
+.header-scrolled .header_bg {
+  background: none repeat scroll 0 0 #000000 !important;
+}
+
+/* CSS para LER MAIS do sobre nos */
+.pressrelease-link {
+	text-decoration: none!important;
+	color: #2bace2!important;
+	font-weight: bold;
+	text-align: center;
+	font-size: 14px!important;
+}
+#top .av_inherit_color a {
+    text-decoration: none!important;
+	font-size: 14px!important;
+}
+
+/* Altera cor da seta SCROLL DOWN do slider */
+#top .scroll-down-link {
+    color: #2BACE2;
+}
+
+
+
+/* Altera fonte dos widgets */
+.textwidget {
+	font-size: 12px;
+}
+
+/* Adiciona shadow ao texto principal */
+.avia-caption-title {
+	text-shadow: 0 0 3px #000000;
+}
+.avia-caption-content {
+	text-shadow: 0 0 3px #000000;
+}
+
+/* Altera border da galeria */
+#top div .avia-gallery img {
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+	border-color: #fff;
+    padding: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+/* Cor de fundo de text block */
+.cinza { background-color: #F8F8F8; padding: 15px; }
+
+/* Altera cores dos links no footer */
+.footer_color a:hover {
+	color: #0386EC!important;
+	text-decoration: none!important;
+}
+
+/* Centra verticalmente setas dos testemunhos */
+#top .av-large-testimonial-slider .avia-slideshow-arrows a {
+    margin-top: 45px!important;
+}
+
+/* Retira tooltip nas img da galeria */
+div.avia-tooltip.avia-tt {
+display: none !important;
+}
+
+/* Gravity forms - reduz margem no topo */
+.page-id-76 .container {
+	padding-top: 30px!important;
+}
+
+
+/* Gravity forms - altera cores dos formulários */
+.gform_wrapper label.gfield_label {
+    font-weight: 400!important;
+}
+#top .gform_wrapper .gfield_radio li label {
+    font-weight: 700!important;
+	color: #064573!important;
+}
+
+/* Altera largura botao reservar na hompeage*/
+.page-id-10 .avia-button.avia-size-large {
+	min-width: 200px!important;
+}
+.page-id-367 .avia-button.avia-size-large {
+	min-width: 200px!important;
+}
+.page-id-432 .avia-button.avia-size-large {
+	min-width: 200px!important;
+}
+
+
+@media only screen and (min-width: 769px) {
+  /* Add your Desktop Styles here */
+/* Altera dimensões das colunas no footer */
+#footer .flex_column.av_one_fourth:nth-child(1) {
+width: 30%;
+}
+#footer .flex_column.av_one_fourth:nth-child(2) {
+width: 15%;
+}
+#footer .flex_column.av_one_fourth:nth-child(3) {
+width: 15%;
+}
+#footer .flex_column.av_one_fourth:nth-child(4) {
+width: 15%;
+}
+.dk-right-mb-center { text-align: right!important; }
+.dk-left-mb-center { text-align: left!important; }
+}
+
+@media only screen and (max-width: 768px) {
+#footer .widget {
+margin: 0 0 -10px 0;
+}
+
+.dk-right-mb-center { text-align: center!important; }
+.dk-left-mb-center { text-align: center!important; }
+
+ul {
+    margin: 4px 0 5px 0!important;
+}
+.destaques {
+	line-height: 1.2em!important;
+}
+.destaque-conceitos {
+	font-size: 20px!important;
+}
+}
+
