@@ -112,3 +112,49 @@ function avia_remove_main_menu_flags(){
 }
 add_action('after_setup_theme','avia_remove_main_menu_flags');
 
+add_action('wp_footer', 'add_custom_css');
+function add_custom_css() {
+	global $current_user;
+	?>
+	<script>
+		jQuery(document).ready(function($) {
+
+		});
+	</script>
+	<style>
+		@media only screen and (max-width: 899px) {
+			.mfp-iframe-scaler iframe {
+				height: 467px;
+			}			
+		}
+		@media only screen and (max-width: 768px) {
+			body.page-id-387 .container_wrap  .hr.avia-builder-el-first {
+				margin-top: 0px !important;
+			}
+			.page-id-367 .mfp-iframe-scaler {
+			    padding-top: 100%;
+			}
+/*			.mfp-iframe-holder .mfp-content {
+			    line-height: 0;
+			    width: 100%;
+			    max-width: 900px; 
+			    height: 100%;
+			    max-height: 500px;
+			}*/
+			.mfp-iframe-scaler iframe {
+				height: 466px;
+			}
+		}
+		@media only screen and (max-width: 611px) {
+			.mfp-iframe-scaler iframe {
+				height: 758px;
+			}
+/*						.page-id-367 .mfp-iframe-scaler {
+			    padding-top: 59%;
+			}*/
+		}
+
+
+	</style>
+	<?php
+}
